@@ -1,0 +1,93 @@
+[package]
+name = "atm_parser_helper_common_syntax-fuzz"
+version = "0.0.0"
+authors = ["Automatically generated"]
+publish = false
+edition = "2018"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+atm_parser_helper = "1.0.0"
+
+[dependencies.atm_parser_helper_common_syntax]
+path = ".."
+features = ["arbitrary"]
+
+# Prevent this from interfering with workspaces
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "spaces_valid"
+path = "fuzz_targets/spaces_valid.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "spaces_any"
+path = "fuzz_targets/spaces_any.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "int_valid"
+path = "fuzz_targets/int_valid.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "int_any"
+path = "fuzz_targets/int_any.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "float_valid"
+path = "fuzz_targets/float_valid.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "float_any"
+path = "fuzz_targets/float_any.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "number_valid"
+path = "fuzz_targets/number_valid.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "number_any"
+path = "fuzz_targets/number_any.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "bytes_valid"
+path = "fuzz_targets/bytes_valid.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "bytes_any"
+path = "fuzz_targets/bytes_any.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "utf8_valid"
+path = "fuzz_targets/utf8_valid.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "utf8_any"
+path = "fuzz_targets/utf8_any.rs"
+test = false
+doc = false

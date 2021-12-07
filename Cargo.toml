@@ -1,0 +1,12 @@
+[package]
+name = "atm_parser_helper_common_syntax"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = ["arbitrary"]
+
+[dependencies]
+atm_parser_helper = "1.0.0"
+arbitrary = { version = "1.0.3", optional = true, features = ["derive"] }
+pretty_dtoa = "0.3.0"

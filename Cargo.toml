@@ -1,14 +1,11 @@
 [package]
 name = "atm_parser_helper_common_syntax"
 description = "Parsing utilities for the common syntax specification."
-version = "1.0.0"
+version = "2.0.0"
 repository = "https://github.com/AljoschaMeyer/atm_parser_helper_common_syntax"
 authors = ["Aljoscha Meyer <mail@aljoscha-meyer.de>"]
 edition = "2021"
 license = "CC-PDDC"
-
-[features]
-default = ["arbitrary"]
 
 [dependencies]
 atm_parser_helper = "1.0.0"
